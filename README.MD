@@ -1,9 +1,11 @@
 --
+
 #Для быстрового запуска приложения ипользуй (с использованием docker)
 
          docker-compose exec php_maze php index.php
 
 Приложение требует библиотеки ImageMagick         
+
 
 ---
          
