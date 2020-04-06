@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  php_maze:
+    container_name: php_maze
+    build:
+      context: .
+      dockerfile: ./container/php/Dockerfile
+    ports:
+      - 9019:9000
+    restart: on-failure:5
+    volumes:
+      - ./:/var/www
+      - ./container/php/php.ini:/usr/local/etc/php/conf.d/php.ini
+    tty: true
